@@ -7,6 +7,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px;
+
+
+  grid-template-areas: "header header header header"
+  "item1 item2 item3 slider"
+  "main main main main"
+  "footer footer footer footer";
 }
 
 .item{
@@ -14,18 +20,23 @@
   text-align: center;
 }
 .header{
-   grid-column: 1/-1;
+   /* grid-column: 1/-1; */
    background-color: aqua;
+   grid-area: header;
 }
 .item1{
   background-color: blue;
+  grid-area: item1;
 }
-.item1{
+.item2{
   background-color: rgb(212, 15, 133);
+  grid-area: item2;
 }
-.item1{
+.item3{
   background-color: rgb(85, 130, 15);
+  grid-area: item3;
 }
 .slider{
   background-color: chocolate;
+ grid-area: slider;
 }
