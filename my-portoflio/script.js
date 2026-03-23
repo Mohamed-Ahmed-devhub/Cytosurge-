@@ -131,43 +131,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function startSiteMagic() {
-    const textElement = document.querySelector(".content-box h1 span");
-    if (textElement) {
-        const text = "Digital Art";
-        let index = 0;
-        textElement.textContent = "";
-        function type() {
-            if (index < text.length) {
-                textElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(type, 150);
-            }
-        }
-        setTimeout(type, 500);
-    }
 
-    const skillBars = document.querySelectorAll(".skill-per");
-    skillBars.forEach((bar, i) => {
-        setTimeout(() => {
-            const width = bar.getAttribute("data-width");
-            bar.style.width = width;
-        }, i * 300);
-    });
 
-    if (typeof VANTA !== "undefined") {
-        VANTA.NET({
-            el: "#particles-js",
-            mouseControls: true,
-            touchControls: true,
-            color: 0x1e3a8a,
-            backgroundColor: 0x050505,
-            points: 8.0,
-            maxDistance: 15.0,
-            spacing: 20.0,
-        });
-    }
-}
+
+
+
+
+
+
+
 
 function launchWelcome() {
     if (sessionStorage.getItem("mega_welcome_done")) return;

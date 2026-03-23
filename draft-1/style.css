@@ -1,34 +1,31 @@
-.navbar .link li{
-list-style-type: none;
-}
-
-.navbar{
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: 80%;
+.coun{
+  display: grid;
+  width: 600px;
+  background-color:antiquewhite;
   margin: auto;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
-.navbar .logo a{
-  text-decoration: none;
-  color: red;
-  font-size: 25px;
+.item{
+  padding: 10px;
+  text-align: center;
 }
-
-.navbar.link{
-  margin: 0px;
+.header{
+   grid-column: 1/-1;
+   background-color: aqua;
 }
-
-.navbar .link ul{
-  margin: 0px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
+.item1{
+  background-color: blue;
 }
-
-.navbar .link ul a{
-  text-decoration: none;
-  color: white;
+.item1{
+  background-color: rgb(212, 15, 133);
+}
+.item1{
+  background-color: rgb(85, 130, 15);
+}
+.slider{
+  background-color: chocolate;
 }
