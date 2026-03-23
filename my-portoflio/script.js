@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. الترحيب الفخم جداً (SweetAlert2 Custom)
+    
     if (typeof Swal !== 'undefined') {
         Swal.fire({
             title: '✨ Welcome to Mohamed\'s Universe',
@@ -111,14 +111,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).then((result) => {
             if (result.isConfirmed) {
-                // مش هيشتغل غير لما يدوس أوك
+                
                 startSiteMagic();
             }
         });
     }
 
     function startSiteMagic() {
-        // أ. تشغيل الكتابة (TypeEffect)
+        
         const textElement = document.querySelector(".content-box h1 span");
         if (textElement) {
             const text = "Digital Art";
@@ -134,16 +134,16 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(type, 500);
         }
 
-        // ب. تشغيل المهارات (واحدة ورا التانية)
+        
         const skillBars = document.querySelectorAll('.skill-per');
         skillBars.forEach((bar, i) => {
             setTimeout(() => {
                 const width = bar.getAttribute('data-width');
                 bar.style.width = width;
-            }, i * 300); // كل واحدة تتأخر عن اللي قبلها 300 مللي ثانية
+            }, i * 300); 
         });
 
-        // ج. تشغيل الـ Vanta (الشبكة)
+        
         if (typeof VANTA !== 'undefined') {
             VANTA.NET({
                 el: "#particles-js",

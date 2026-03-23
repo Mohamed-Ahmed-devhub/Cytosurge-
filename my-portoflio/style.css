@@ -437,7 +437,7 @@ section,footer {
   border-color: rgba(56, 191, 248, 0.027);
 }
 .stat-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.1);
 }
@@ -467,7 +467,7 @@ section,footer {
 
 .skill-item:hover {
     border-color: #1e3a8a;
-    transform: translateY(-5px);
+    transform: translateY(-10px) !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -519,17 +519,16 @@ section,footer {
 }
 
 .work-item {
-  background: rgba(255, 255, 255, 0.02);
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   padding: 15px;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) ;
   position: relative;
   overflow: hidden;
 }
 
 .work-item:hover {
-  transform: translateY(-15px);
+  transform: translateY(-15px) !important;
   border-color: #38bdf8;
   box-shadow: 0 20px 40px rgba(56, 189, 248, 0.1);
 }
@@ -871,7 +870,7 @@ section,footer {
 
 
 
-/* --- Ultra Modern Footer 2026 --- */
+
 .modern-footer {
     padding: 60px 20px 30px;
     background: #010409;
