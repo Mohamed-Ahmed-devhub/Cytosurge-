@@ -457,14 +457,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         ? `
                     <div style="margin-top:12px; padding:10px; background:rgba(168,85,247,0.05); border-left:3px solid #a855f7; border-radius:8px;">
                         <div style="display:flex; align-items:center; gap:8px;">
-                            <img src="YOUR_IMAGE_URL" style="width:25px; height:25px; border-radius:50%;">
-                            <span style="color:#a855f7; font-size:11px; font-weight:bold;">M.AHMED ⚡</span>
+                        <img src="/image/Watts.jpeg"  style="width:33px; height:33px;
+                        border-radius:50%; border:1px solid #621473e8; object-fit:cover;">
+                            <span style="color:#a855f7; font-size:18px; font-weight:bold;">ENG-M.AHMED 🧑‍💻⚡</span>
                         </div>
                         <p style="font-size:12px; color:#bbb; margin:5px 0 8px 33px;">${r.reply}</p>
                         <div style="margin-left:33px; display:flex; gap:10px;">
                             <span onclick="toggleReaction(${r.id}, 'like', true)" style="cursor:pointer; font-size:10px; color:${rRs.like.includes(myId) ? "#a855f7" : "#555"}">👍 ${rRs.like.length}</span>
                             <span onclick="toggleReaction(${r.id}, 'heart', true)" style="cursor:pointer; font-size:10px; color:${rRs.heart.includes(myId) ? "#ff4d4d" : "#555"}">❤️ ${rRs.heart.length}</span>
-                      </div>
+                    </div>
                     </div>`
                         : ""
                     }
