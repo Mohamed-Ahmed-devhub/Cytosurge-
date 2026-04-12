@@ -27,7 +27,6 @@ body {
   width: 100%;
   z-index: 1000;
   background: linear-gradient(135deg, #001f3f 0%, #00294a 50%, #003a6e 100%);
-  backdrop-filter: blur(8px);
   padding: 16px 40px;
   display: flex;
   align-items: center;
@@ -44,12 +43,21 @@ body {
   align-items: center;
   gap: 32px;
   list-style: none;
-  border-right:1px solid #0c90e2;
 }
-
+.fa-magnifying-glass {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  border-left:2px solid #0c90e2ec ;
+  padding-left: 16px;
+}
+.fa-magnifying-glass:hover {
+  color:var(--blue-accent);
+}
 .styleNav-1 a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--white);
   letter-spacing: 0.5px;
