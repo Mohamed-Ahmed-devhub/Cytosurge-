@@ -31,6 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .img-Bonid {
@@ -145,12 +146,12 @@ body {
   margin-bottom: 50px;
 }
 .section-intro img{
-  height: 100px;
-  margin-bottom: 15px;
+  height: 120px;
+  margin-bottom: 22px;
 }
 .section-intro h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 10px;
   color: var(--navy);
 }
@@ -182,9 +183,22 @@ body {
   color: #063f3e12;
   line-height: 1;
 }
+.icon-wra{
+}
 .card-1 h1{
   color: rgb(255, 205, 7);
   margin-bottom: 13px;
   font-weight: 700;
   font-size: 33px;
+}
+.card-1 p{
+  font-size: 18px;
+  color:#555 ;
+}
+.card-1 i{
+  font-size: 60px;
+  color: #0c90e2;
+  margin-bottom: 16px;
+  display: block;
+  
 }
