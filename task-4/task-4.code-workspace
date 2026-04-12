@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../task-3-Cytosurge"
+	},
+	{
+		"path": "../my-portoflio"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "task-4"
+  }
+}
